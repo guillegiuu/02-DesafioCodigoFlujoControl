@@ -104,4 +104,31 @@ Se está verificando si "num" es mayor que cero y al mismo tiempo menor que cero
 
 """
 
+# D Reseña de Pelicula:
 
+"""
+Queremos crear una función que nos ayude a calificar películas. Nuestra función dividirá las calificaciones en diferentes rangos y le dirá al usuario cómo fue la película basándose en la calificación de la película. 
+
+1 - Define nuestra funcion que acepte un unico numero llamado valoracion "rating".
+
+2 - Si la valoracion es igual o inferior a 5, devuelve "Terrible!".
+
+3 - Si la calificacion es inferior a 9, devuelve "Interesante".
+
+4 - Si no se cumple ninguna de las condiciones anteriores, devuelve "Increible!".
+
+"""
+def reseña_pelicula(rating):
+    if (rating <= 5):
+        return "Terrible!"
+    elif (rating > 5 and rating < 9):
+        return "Interesante"
+    else: # Mayor a 9
+        return "Increible!"
+print(reseña_pelicula(9)) # "Increible!"
+print(reseña_pelicula(6)) # "Terrible!"
+print(reseña_pelicula(3)) # "Terrible!"
+
+"""
+Este código define una función llamada reseña_pelicula que toma un parámetro llamado rating. Dentro de la función, comprueba el valor de rating para determinar la reseña de la película. Si la calificación es menor o igual a 5, entonces devuelve "¡Terrible!". Si la calificación es mayor que 5 y menor que 9, devuelve "Interesante". Si la calificación no cumple las condiciones anteriores (calificación mayor o igual a 9), devuelve "¡Increíble!". A continuación, se llama a la función tres veces con valoraciones diferentes (9, 6 y 3) y se imprimen los resultados en la consola.
+"""
