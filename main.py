@@ -59,3 +59,49 @@ def mismo_nombre(tu_nombre, mi_nombre):
 
 print(mismo_nombre("guille", "manu"))
 print(mismo_nombre("rober", "rober"))
+
+
+# Operador == 
+# Definicion:
+
+"""
+Como puedes ver en este código de solución, comparar dos cadenas en python se puede hacer utilizando el operador ==.
+
+El operador == realiza una comparación estricta entre dos valores. Si ambos operandos tiene el mismo valor, el resultado de la comparación es True. Si los valores son de diferente tipo, el valor de la comparación es False.
+
+"""
+
+# C Siempre Falso: 
+
+"""
+Hay algunas situaciones que normalmente querrá evitar cuando programe utilizando sentencias condicionales. Un ejemplo es una contradicción. Esto ocurre cuando tu condición siempre será falsa sin importar el valor que le pases. Vamos a crear un ejemplo de una función que contiene una contradicción.
+
+1 - Defina la función para que acepte un único parámetro llamado num.
+
+2 - Utilice una combinación de <, > y y para crear una contradicción en una sentencia if.
+
+3 - Si la condición es verdadera, devuelve True, en caso contrario devuelve False. El truco aquí es que como hemos escrito una contradicción, la condición nunca debería ser verdadera, así que deberíamos esperar devolver siempre False.
+
+"""
+def siempre_falso(num):
+    if (num > 0 and num < 0):
+        return True
+    else:
+        return False
+print(siempre_falso(20))
+
+# C.1 
+def siempre_falso_1(num):
+    num = 20
+    if (num > 0 and num < 0):
+        return True
+    else:
+        return False
+print(siempre_falso_1(250))
+
+"""
+Se está verificando si "num" es mayor que cero y al mismo tiempo menor que cero, lo cual es imposible, ya que un número no puede ser mayor y menor que cero al mismo tiempo.
+
+"""
+
+
