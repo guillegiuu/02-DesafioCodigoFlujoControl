@@ -132,3 +132,50 @@ print(reseña_pelicula(3)) # "Terrible!"
 """
 Este código define una función llamada reseña_pelicula que toma un parámetro llamado rating. Dentro de la función, comprueba el valor de rating para determinar la reseña de la película. Si la calificación es menor o igual a 5, entonces devuelve "¡Terrible!". Si la calificación es mayor que 5 y menor que 9, devuelve "Interesante". Si la calificación no cumple las condiciones anteriores (calificación mayor o igual a 9), devuelve "¡Increíble!". A continuación, se llama a la función tres veces con valoraciones diferentes (9, 6 y 3) y se imprimen los resultados en la consola.
 """
+
+# E Numero Maximo:
+
+"""
+
+Para el reto final, vamos a seleccionar qué número de tres valores de entrada es el mayor utilizando sentencias condicionales. Para ello, tenemos que comprobar las diferentes combinaciones de valores para ver qué número es mayor que los otros dos. 
+
+1 - Defina una función que tenga tres parámetros de entrada, num1, num2 y num3.
+
+2 - Comprueba si num1 es mayor que los otros dos números.
+3 - En caso afirmativo, devuelve num1.
+
+4 - Comprueba si num2 es mayor que los otros dos números.
+5 - Si es así, devuelve num2.
+
+6 - Comprueba si num3 es mayor que los otros dos números.
+7 - Si es así, devuelve num3.
+
+8 - Si hubiera un empate entre los dos números mayores, entonces devuelve "¡Es un empate!".
+
+
+"""
+def max_num(num1, num2, num3):
+    if (num1 > num2 and num1 > num3):
+        return num1
+    elif (num2 > num1 and num2 > num3):
+        return num2
+    elif (num3 > num1 and num3 > num2):
+        return num3
+    else:
+        return "¡Es un empate!"
+print(max_num(-10, 0, 10))
+print(max_num(-10, 5, -30))
+print(max_num(-5, -10, -10))
+print(max_num(2, 3, 3))
+
+"""
+
+Este código define una función llamada max_num que recibe tres parámetros: num1, num2 y num3. Compara estos tres números para averiguar cuál es el mayor. Esto es lo que ocurre dentro de la función:
+
+Primero comprueba si num1 es mayor que num2 y num3. Si esto es cierto, devuelve num1, ya que es el número mayor.
+Si la primera condición no es cierta, comprueba si num2 es mayor que num1 y num3. Si se cumple, devuelve num2, ya que es el número mayor.
+Si ninguna de estas condiciones es cierta, comprueba si num3 es mayor que num1 y num2. Si es cierto, devuelve num3, ya que es el número mayor.
+Si no se cumple ninguna de estas condiciones, significa que al menos dos números son iguales y el tercero es menor. En este caso, devuelve "¡Es un empate!", que significa "¡Es un empate!".
+Después de definir la función, se llama con varios conjuntos de números para probar la función. Por ejemplo, max_num(-10, 0, 10) devuelve 10, ya que 10 es el mayor número de este conjunto.
+
+"""
