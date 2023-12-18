@@ -60,10 +60,8 @@ def mismo_nombre(tu_nombre, mi_nombre):
 print(mismo_nombre("guille", "manu"))
 print(mismo_nombre("rober", "rober"))
 
-
-# Operador == 
+# Operador ==
 # Definicion:
-
 """
 Como puedes ver en este código de solución, comparar dos cadenas en python se puede hacer utilizando el operador ==.
 
@@ -71,8 +69,7 @@ El operador == realiza una comparación estricta entre dos valores. Si ambos ope
 
 """
 
-# C Siempre Falso: 
-
+# C Siempre Falso:
 """
 Hay algunas situaciones que normalmente querrá evitar cuando programe utilizando sentencias condicionales. Un ejemplo es una contradicción. Esto ocurre cuando tu condición siempre será falsa sin importar el valor que le pases. Vamos a crear un ejemplo de una función que contiene una contradicción.
 
@@ -83,29 +80,34 @@ Hay algunas situaciones que normalmente querrá evitar cuando programe utilizand
 3 - Si la condición es verdadera, devuelve True, en caso contrario devuelve False. El truco aquí es que como hemos escrito una contradicción, la condición nunca debería ser verdadera, así que deberíamos esperar devolver siempre False.
 
 """
+
+
 def siempre_falso(num):
     if (num > 0 and num < 0):
         return True
     else:
         return False
+
+
 print(siempre_falso(20))
 
-# C.1 
+
+# C.1
 def siempre_falso_1(num):
     num = 20
     if (num > 0 and num < 0):
         return True
     else:
         return False
-print(siempre_falso_1(250))
 
+
+print(siempre_falso_1(250))
 """
 Se está verificando si "num" es mayor que cero y al mismo tiempo menor que cero, lo cual es imposible, ya que un número no puede ser mayor y menor que cero al mismo tiempo.
 
 """
 
 # D Reseña de Pelicula:
-
 """
 Queremos crear una función que nos ayude a calificar películas. Nuestra función dividirá las calificaciones en diferentes rangos y le dirá al usuario cómo fue la película basándose en la calificación de la película. 
 
@@ -118,23 +120,25 @@ Queremos crear una función que nos ayude a calificar películas. Nuestra funci�
 4 - Si no se cumple ninguna de las condiciones anteriores, devuelve "Increible!".
 
 """
+
+
 def reseña_pelicula(rating):
     if (rating <= 5):
         return "Terrible!"
     elif (rating > 5 and rating < 9):
         return "Interesante"
-    else: # Mayor a 9
+    else:  # Mayor a 9
         return "Increible!"
-print(reseña_pelicula(9)) # "Increible!"
-print(reseña_pelicula(6)) # "Terrible!"
-print(reseña_pelicula(3)) # "Terrible!"
 
+
+print(reseña_pelicula(9))  # "Increible!"
+print(reseña_pelicula(6))  # "Terrible!"
+print(reseña_pelicula(3))  # "Terrible!"
 """
 Este código define una función llamada reseña_pelicula que toma un parámetro llamado rating. Dentro de la función, comprueba el valor de rating para determinar la reseña de la película. Si la calificación es menor o igual a 5, entonces devuelve "¡Terrible!". Si la calificación es mayor que 5 y menor que 9, devuelve "Interesante". Si la calificación no cumple las condiciones anteriores (calificación mayor o igual a 9), devuelve "¡Increíble!". A continuación, se llama a la función tres veces con valoraciones diferentes (9, 6 y 3) y se imprimen los resultados en la consola.
 """
 
 # E Numero Maximo:
-
 """
 
 Para el reto final, vamos a seleccionar qué número de tres valores de entrada es el mayor utilizando sentencias condicionales. Para ello, tenemos que comprobar las diferentes combinaciones de valores para ver qué número es mayor que los otros dos. 
@@ -154,6 +158,8 @@ Para el reto final, vamos a seleccionar qué número de tres valores de entrada 
 
 
 """
+
+
 def max_num(num1, num2, num3):
     if (num1 > num2 and num1 > num3):
         return num1
@@ -163,11 +169,12 @@ def max_num(num1, num2, num3):
         return num3
     else:
         return "¡Es un empate!"
+
+
 print(max_num(-10, 0, 10))
 print(max_num(-10, 5, -30))
 print(max_num(-5, -10, -10))
 print(max_num(2, 3, 3))
-
 """
 
 Este código define una función llamada max_num que recibe tres parámetros: num1, num2 y num3. Compara estos tres números para averiguar cuál es el mayor. Esto es lo que ocurre dentro de la función:
